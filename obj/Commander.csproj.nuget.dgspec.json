@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj": {}
+    "c:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj": {
+    "c:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj",
+        "projectUniqueName": "c:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj",
         "projectName": "Commander",
-        "projectPath": "C:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj",
+        "projectPath": "c:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\Commander.csproj",
         "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\obj\\",
+        "outputPath": "c:\\Users\\Samsung\\Desktop\\ExeDotNet\\Commander\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
