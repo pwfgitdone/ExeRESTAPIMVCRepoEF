@@ -10,7 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
 
 builder.Services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer(
     builder.Configuration.GetConnectionString("CommanderConnection")
