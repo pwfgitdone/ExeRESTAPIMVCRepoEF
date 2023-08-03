@@ -1,4 +1,5 @@
 using Commander.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+
+builder.Services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer(
+    builder.Configuration.GetConnectionString("CommanderConnection")
+));
 
 var app = builder.Build();
 
