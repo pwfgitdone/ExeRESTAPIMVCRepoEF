@@ -4,7 +4,7 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        public void CreatCommand(Command cmd)
+        public void CreateCommand(Command cmd)
         {
             throw new NotImplementedException();
         }
@@ -26,6 +26,11 @@ namespace Commander.Data
         }
 
         public bool SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateCommand(Command cmd)
         {
             throw new NotImplementedException();
         }

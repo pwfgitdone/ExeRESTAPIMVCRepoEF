@@ -11,7 +11,7 @@ namespace Commander.Data
             _context = context;
         }
 
-        public void CreatCommand(Command cmd)
+        public void CreateCommand(Command cmd)
         {
             if(cmd == null) {
                 throw new ArgumentNullException(nameof(cmd));
@@ -32,6 +32,14 @@ namespace Commander.Data
         public bool SaveChanges()
         {
             return _context.SaveChanges() >= 0;
+        }
+
+        public void UpdateCommand(Command cmd)
+        {
+            if(cmd == null) {
+                throw new ArgumentNullException(nameof(cmd));
+            }
+            _context.Commands.Update(cmd);
         }
     }
 }
